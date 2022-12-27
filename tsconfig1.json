@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES6",
+    "moduleResolution": "node",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    
+    "jsx": "react",
+    "allowJs": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "resolveJsonModule": true,
+    "paths": {
+      "@log": ["src/log.ts"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*ts"
+  ],
+  "exclude": ["dist**/*"],
+  "ts-node": {
+    "compilerOptions":{
+      "module": "CommonJS"
+    },
+    "require": ["tsconfig-paths/register"]
+  }
+}
